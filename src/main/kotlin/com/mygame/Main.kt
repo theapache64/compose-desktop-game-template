@@ -12,6 +12,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.input.pointer.pointerInput
+import androidx.compose.ui.unit.DpSize
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.Window
@@ -30,7 +31,7 @@ fun main() = application {
     println("Game started")
 
     val windowState = rememberWindowState(
-        size = WindowSize(MyGame.SCREEN_WIDTH, MyGame.SCREEN_HEIGHT)
+        size = DpSize(MyGame.SCREEN_WIDTH, MyGame.SCREEN_HEIGHT)
     )
     Window(onCloseRequest = ::exitApplication, state = windowState) {
         Game()
