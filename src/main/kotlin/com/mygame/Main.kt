@@ -48,8 +48,7 @@ fun Game() {
         // Game loop
         while (true) {
             game.step()
-            // FPS
-            delay(60)
+            delay(16)
         }
     }
 
